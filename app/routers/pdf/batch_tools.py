@@ -6,9 +6,9 @@ import json
 import os
 import aiofiles
 
-from ..services.pdf_handler import redact_pdf, scrub_pdf_metadata
-from ..services.ocr import perform_ocr_on_pdf, translate_text
-from ..services.utils import save_temp_file, get_temp_file_path, cleanup_temp_file, cleanup_temp_files, extract_zip_archive, create_zip_archive
+from ...services.pdf_handler import redact_pdf, scrub_pdf_metadata
+from ...services.ocr import perform_ocr_on_pdf, translate_text
+from ...services.utils import save_temp_file, get_temp_file_path, cleanup_temp_file, cleanup_temp_files, extract_zip_archive, create_zip_archive
 
 router = APIRouter()
 

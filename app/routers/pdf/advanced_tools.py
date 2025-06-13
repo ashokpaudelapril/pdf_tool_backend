@@ -5,9 +5,9 @@ from pathlib import Path
 import json
 import os
 
-from ..services.pdf_handler import redact_pdf, scrub_pdf_metadata, fill_and_flatten_pdf_form
-from ..services.ocr import perform_ocr_on_pdf, translate_text
-from ..services.utils import save_temp_file, get_temp_file_path, cleanup_temp_file
+from ...services.pdf_handler import redact_pdf, scrub_pdf_metadata, fill_and_flatten_pdf_form
+from ...services.ocr import perform_ocr_on_pdf, translate_text
+from ...services.utils import save_temp_file, get_temp_file_path, cleanup_temp_file
 
 router = APIRouter()
 
