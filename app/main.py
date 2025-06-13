@@ -1,10 +1,10 @@
 # backend/app/main.py
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .routers import basic_tools # Existing router
-from .routers import batch_tools # Existing router
-from .routers import conversion # NEW: Import the new conversion router
-from .routers import advanced_tools
+from .routers.pdf import basic_tools # Existing router
+from .routers.pdf import batch_tools # Existing router
+from .routers.convert import conversion # NEW: Import the new conversion router
+from .routers.pdf import advanced_tools
 
 app = FastAPI(
     title="Secure PDF Toolkit API",
