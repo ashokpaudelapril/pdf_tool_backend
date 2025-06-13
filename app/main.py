@@ -16,6 +16,7 @@ app = FastAPI(
 origins = [
     "http://localhost:3000", # Your frontend URL
     "http://127.0.0.1:3000",
+    "https://pdf-tool-jd00rb0i3-ashokpaudelaprils-projects.vercel.app"
 ]
 
 app.add_middleware(
